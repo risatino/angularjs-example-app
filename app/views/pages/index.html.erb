@@ -1,8 +1,26 @@
 <h1>Welcome to AngularJS</h1>
 
 <div ng-app="app">
-  {{1 + 1}}
+ <!--  {{ 1 + 1 }} -->
   <div ng-controller="stuffCtrl">
-  {{message}}
+    <div ng-repeat="review in reviews">{{ review }}</div>
+
+    <div class="form">
+      <input type="text" ng-model="newReview">
+      <button ng-click="addReview(newReview)">Add Review</button>
+    </div>
   </div>
 </div>
+<!--     <ul> -->
+<!--       <li>{{ messages[0] }}</li>
+      <li>{{ messages[1] }}</li>
+      <li>{{ messages[2] }}</li> -->
+      <!-- <li ng-repeat="message in messages">{{ message }}</li>
+
+      < = @messages.each do |message| %>
+        <li>< = message %></li>
+      < end %>
+    </ul>
+    <input type="text" ng-model="message">
+  </div>
+</div> -->
