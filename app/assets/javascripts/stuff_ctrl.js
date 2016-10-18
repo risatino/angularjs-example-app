@@ -3,9 +3,9 @@
 
   angular.module("app").controller("stuffCtrl", function($scope){
     $scope.reviews = [
-                        "Angular is cool",
+                        "Angular is pretty cool",
                         "It is totes awesome sauce",
-                        "meh... except the Ember munchkin is better."
+                        "meh... except the Ember munchkin is next level."
                       ];
 
     $scope.addReview = function(newText) {
