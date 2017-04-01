@@ -4,8 +4,8 @@
   angular.module("app").controller("stuffCtrl", function($scope){
     $scope.reviews = [
                         "Angular is pretty cool",
-                        "It is totes awesome sauce",
-                        "meh... except the Ember munchkin is next level."
+                        "It allows two way binding",
+                        "And is an example of dependency injection."
                       ];
 
     $scope.addReview = function(newText) {
